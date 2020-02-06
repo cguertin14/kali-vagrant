@@ -17,3 +17,6 @@ vagrant up --provision
 ```
 vagrant ssh
 ```
+## References
+
+- [Official Kali for Vagrant Guide](https://www.kali.org/news/announcing-kali-for-vagrant/)
