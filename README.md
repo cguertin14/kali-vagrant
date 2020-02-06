@@ -17,6 +17,19 @@ vagrant up --provision
 ```
 vagrant ssh
 ```
+
+## Suspend (shut down) the machine
+
+```
+vagrant suspend
+```
+
+## Destroy the machine (delete the VM)
+
+```
+vagrant destroy
+```
+
 ## References
 
 - [Official Kali for Vagrant Guide](https://www.kali.org/news/announcing-kali-for-vagrant/)
