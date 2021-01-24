@@ -4,6 +4,7 @@ Vagrantfile configuration to run a Kali Linux system on VirtualBox using Vagrant
 
 ## Requirements
 
+- [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 - [Vagrant](https://www.vagrantup.com/docs/cli/)
 
 ## Deployment
