@@ -9,25 +9,25 @@ Vagrantfile configuration to run a Kali Linux system on VirtualBox using Vagrant
 
 ## Deployment
 
-```
-vagrant up --provision
+```bash
+vagrant up --provision --provider=virtualbox
 ```
 
 ## Accessing the machine
 
-```
+```bash
 vagrant ssh
 ```
 
 ## Suspend (shut down) the machine
 
-```
+```bash
 vagrant suspend
 ```
 
 ## Destroy the machine (delete the VM)
 
-```
+```bash
 vagrant destroy
 ```
 

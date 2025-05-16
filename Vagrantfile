@@ -2,8 +2,6 @@
 # vi: set ft=ruby :
 
 Vagrant.configure("2") do |config|
-  # Boot Timeout
-
   config.vm.box = "kalilinux/rolling"
 
   # Create a forwarded port
@@ -22,8 +20,12 @@ Vagrant.configure("2") do |config|
   end
 
   # Provision the machine with a shell script
-  config.vm.provision "shell", inline: <<-SHELL
-    apt-get update
-    apt-get install -y crowbar knockd
-  SHELL
+  config.vm.provision "shell", privileged: false, inline: <<-EOF
+    sudo apt update
+    sudo apt install -y crowbar knockd git make
+
+    git clone https://github.com/cguertin14/ctfs.git
+    cd ctfs
+    make
+  EOF
 end
